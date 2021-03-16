@@ -21,16 +21,14 @@ section {
     }
     .nav-items {
         flex-wrap: wrap;
-        align-items: center;
     }
     .nav-item {
         padding: 0px;
         margin: 0px;
     }
 
-    .section {
+    section {
         width: auto;
-        justify-content: flex-start;
     }
     .weather-card-top {
         justify-content: flex-start;
@@ -161,6 +159,16 @@ article {
     padding: 0px;
     text-align: center;
     flex-basis: 47%;
+}
+.weather-summary>table {
+   margin: 15px 0px 15px 0px;
+   table-layout: fixed;
+   border-collapse: collapse;
+   border: 2px solid #000;
+   width: 100%;
+}
+.weather-summary>th, .weather-summary>td {
+    padding: 20px;
 }
 
 .side-container-content {
