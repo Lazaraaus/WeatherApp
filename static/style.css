@@ -9,18 +9,50 @@ section {
 }
 
 /*          Media Queries           */
-@media (max-width: 800px) {
-    .content-container {
-        flex-direction: column;
+@media (max-width: 812px) {
+    body {
+        width: auto;
     }
-    .last-section {
-        border: none;
+    .content-container {
+        flex-wrap: wrap;
+    }
+    .side-content-container {
+        flex-grow: 2;
+    }
+    .nav-items {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .nav-item {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .section {
+        width: auto;
+        justify-content: flex-start;
+    }
+    .weather-card-top {
+        justify-content: flex-start;
+        flex-wrap: wrap;    
+        flex-basis: 10%;
+        margin: 5px;
+    }
+    .weather-card {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-basis: 10%;
+    }
+    .weather-card-info {
+        padding: 0px;
+        font-size: small;
+    }
+    .line-break {
+        display: none;
     }
 }
 
 /*          LAYOUT STYLES           */
-
-
 /* General Styles */
 hgroup {
     text-align: center;
@@ -34,9 +66,6 @@ section {
     height: auto;
     justify-content: space-between;
     background-color: inherit;
-}
-.last-section {
-    border-bottom: 1px #000 solid;
 }
 article {
     display: flex;
@@ -87,6 +116,8 @@ article {
     flex-basis: 33%;
     padding: 0px;
     background-color: #E3E8E9;
+}
+.side-content {
     overflow-y: auto;
     overflow-x: hidden;
     height: 1080px;
@@ -100,6 +131,7 @@ article {
     border-top: 1px #000 solid;
     background-color: inherit;
     width: auto;
+    padding-top: 30px;
 }
 .weather-card-top {
     display: flex;
@@ -129,7 +161,6 @@ article {
     padding: 0px;
     text-align: center;
     flex-basis: 47%;
-    visibility: collapse; 
 }
 
 .side-container-content {
@@ -139,6 +170,9 @@ article {
     border-bottom: 1px #000 solid;
     background-color: inherit;
     padding-bottom: 20px;
+}
+.last {
+    border: none;
 }
 .article-image {
    height: 75px;
@@ -153,6 +187,7 @@ article {
 .article-summary {
     margin-bottom: 0px;
     background-color: inherit;
+    padding-left: 10px;
 }
 
 
@@ -164,6 +199,8 @@ article {
     height: auto;
     width: auto;
     border-top: 1px #000 solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .main-container-header>h1 {
     border-bottom: 1px #000 solid;
@@ -177,6 +214,8 @@ article {
     height: auto;
     width: auto;
     border-top: 1px #000 solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .side-container-header>h1 {
     border-bottom: 1px #000 solid;
@@ -184,6 +223,8 @@ article {
 }
 .page-header>hgroup {
     text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 /* Page Styling */ 
@@ -214,6 +255,8 @@ a:hover, a.on {
 .footer-container {
     background-color: #E3E8E9;
     margin-top: 60px;
+    border-top: 1px #000 solid;
+    padding-top: 30px;
 }
 .site-footer {
     width: auto;
